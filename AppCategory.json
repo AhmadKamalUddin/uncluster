@@ -1,0 +1,5 @@
+{
+  "Browsers": ["chrome", "msedge", "firefox", "brave"],
+  "Communication": ["Discord", "Teams", "Slack", "Zoom"],
+  "Launchers": ["EpicGamesLauncher", "steamwebhelper", "Battle.net", "CreativeCloud"]
+}
