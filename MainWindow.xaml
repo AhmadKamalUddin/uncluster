@@ -53,10 +53,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Grid x:Name="Root" RenderTransformOrigin="0.5,0.5">
-                            <Grid.RenderTransform>
-                                <ScaleTransform x:Name="ScaleT" ScaleX="1" ScaleY="1"/>
-                            </Grid.RenderTransform>
+                        <Grid>
                             <Ellipse x:Name="Circle"
                                      Fill="{TemplateBinding Background}"
                                      Width="190" Height="190">
@@ -73,8 +70,7 @@
                                 <Setter TargetName="Circle" Property="Fill" Value="#0096B7"/>
                             </Trigger>
                             <Trigger Property="IsPressed" Value="True">
-                                <Setter TargetName="ScaleT" Property="ScaleX" Value="0.95"/>
-                                <Setter TargetName="ScaleT" Property="ScaleY" Value="0.95"/>
+                                <Setter TargetName="Circle" Property="Opacity" Value="0.8"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
